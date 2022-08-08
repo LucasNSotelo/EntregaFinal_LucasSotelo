@@ -1,0 +1,87 @@
+.qstit{
+    width: 100%;
+    height: 50px;
+    padding: 30px;
+
+}
+.quienesSomos{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    .quienesSomosDesc{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+        width: 355px;
+        background-color: antiquewhite;
+        margin: 5px;
+        border: 1px solid grey;
+        flex-direction: column;
+        grid-area: quienesSomosDesc;
+        h2{
+            text-decoration:underline;
+        }
+    }
+    .comentarios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color:antiquewhite;
+        height: 400px;
+        width: 355px;
+        margin: 5px;
+        border: 1px solid grey;
+        grid-area: comentarios;
+        h2{
+            text-decoration:underline;
+        }
+    }
+    .carrusel{
+        height: 400px;
+        width:  355px;
+        margin: 5px;
+        border: 1px solid grey;
+        grid-area: carrusel;
+    }
+    .animacion{
+        height: 400px;
+        width: 355px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: animacion;
+        border: 1px solid grey;
+        img{
+            width: 300px;
+            position: absolute;
+            animation-name: rotacion;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+        }
+    }
+    
+}
+@keyframes rotacion{ 
+    from{transform: rotatez(0deg);}
+    to{transform: rotateZ(360deg);}
+}
+.slide img{
+    width: 355px;
+    height: 400px;
+   }
+   
+
+
+
+
+
+
+
+
+
+
+

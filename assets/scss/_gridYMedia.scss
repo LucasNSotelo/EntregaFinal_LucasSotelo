@@ -1,0 +1,22 @@
+.divQuienesSomos{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    display: grid;
+    grid-template-areas:    "carrusel comentarios" 
+                            "quienesSomosDesc animacion"    ;
+    
+    }
+@media(max-width:750px){
+    .divQuienesSomos{
+        display: grid;
+        grid-template-areas:    "carrusel "
+                                "comentarios" 
+                                "quienesSomosDesc"
+                                " animacion"    ;
+    }
+} 

@@ -1,0 +1,34 @@
+.mainProductos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    .divProductos{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        justify-content: center;
+        align-content: center;
+    flex-direction: column;}
+}
+.contTarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.titulos{
+    display: flex;
+    justify-content: center;
+}
+.titulos1{
+    color: aliceblue;
+    background-color: black;
+    width: 100%;
+}
+.tablaMedidas{
+    display: flex;
+    justify-content: center;
+}
+.tablaMedidas img{
+    width: 360px;
+}

@@ -1,0 +1,218 @@
+.mainHome {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    .divMainHome{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+
+    }
+}
+
+.tarjeta1{
+    width: 350px;
+    height: 450px;
+    background-image: url(../img/imagenesHome/imagen1-min.jpg);
+    background-size: cover;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: all ease-in-out 300ms;
+    margin:20px;
+    
+        
+}
+.tarjeta1:hover{
+    box-shadow: 5px 5px 10px;
+}      
+.tarjeta2{       
+        width: 350px;
+        height: 450px;
+        background-image: url(../img/imagenesHome/imagen2-min.jpg);
+        background-size: cover;
+        display: flex;
+        border: 1px gray solid;
+        margin: 20px;
+        transition: all ease-in-out 300ms;
+        
+}
+.tarjeta2:hover{
+    box-shadow: 5px 5px 10px;
+}      
+.tarjeta2 ul{
+    display: flex;
+    align-items: center;
+    li{
+        display: flex;
+        flex-direction:column;    
+        .a1{
+            margin-top: 10px;
+            width: 150px;
+            height: 40px;
+            background-color:black;
+            border-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-style: solid;
+            color: aliceblue;
+            text-decoration: none;
+        }
+        .a2{  
+            
+            margin-top: 10px;
+            width: 150px;
+            height: 40px;
+            background-color:black;
+            border-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-style: solid;
+            color: aliceblue;
+            text-decoration: none;
+        }
+        .a3{
+            margin-top: 10px;
+            width: 150px;
+            height: 40px;
+            background-color:black;
+            border-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-style: solid;
+            color: aliceblue;
+            text-decoration: none;
+        }
+        .a4{
+            margin-top: 10px;
+            width: 150px;
+            height: 40px;
+            background-color:black;
+            border-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-style: solid;
+            color: aliceblue;
+            text-decoration: none;
+        }
+        .a5{
+            margin-top: 10px;
+            width: 150px;
+            height: 40px;
+            background-color:black;
+            border-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-style: solid;
+            color: aliceblue;
+            text-decoration: none;
+        }
+        .a6{
+            margin-top: 10px;
+            width: 150px;
+            height: 40px;
+            background-color:black;
+            border-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-style: solid;
+            color: aliceblue;
+            text-decoration: none;
+        }
+        .a7{
+            margin-top: 10px;
+            width: 150px;
+            height: 40px;
+            background-color:black;
+            border-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-style: solid;
+            color: aliceblue;
+            text-decoration: none;
+        }
+        .a8{
+            margin-top: 10px;
+            width: 150px;
+            height: 40px;
+            background-color:black;
+            border-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-style: solid;
+            color: aliceblue;
+            text-decoration: none;
+        }
+    }
+}
+
+
+.a1:hover{
+    font-size: 23px;
+    color: aliceblue;
+    }
+    .a2:hover{
+        font-size: 23px;
+        color: aliceblue;
+    }
+    .a3:hover{
+        font-size: 23px;
+        color: aliceblue;
+    }
+    .a4:hover{
+        font-size: 23px;
+        color: aliceblue;
+    }
+    .a5:hover{
+        font-size: 23px;
+        color: aliceblue;
+    }
+    .a6:hover{
+        font-size: 23px;
+        color: aliceblue;
+    }
+    .a7:hover{
+        font-size: 23px;
+        color: aliceblue;
+    }
+    .a8:hover{
+        font-size: 23px;
+        color: aliceblue;
+    }
+    
+    
+    
+    
+    
+
+.tarjeta3 a{
+    text-decoration: none; }
+.tarjeta3{       
+        width: 350px;
+        height: 450px;
+        background-image: url(../img/imagenesHome/imagen3-min.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid grey;
+        transition: all ease-in-out 300ms;
+        margin: 20px;
+    }
+
+
+.tarjeta3:hover{
+    box-shadow: 5px 5px 10px;
+}

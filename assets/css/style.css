@@ -1,0 +1,631 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header div {
+  display: flex;
+  grid-area: header;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(#e8e2e4, #ebe7e4);
+}
+
+main {
+  background-image: url(../img/armario3-copia.jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+footer {
+  background-color: #21242a;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  color: aliceblue;
+}
+footer .bloques {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+footer .bloques .bloqueUno {
+  display: flex;
+  justify-content: center;
+}
+footer .bloques .bloqueUno img {
+  width: 380px;
+  margin: 15px;
+}
+footer .bloques .bloqueDos {
+  width: 400px;
+  height: 270px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .bloques .bloqueDos img {
+  width: 150px;
+}
+footer .bloques .bloqueTres {
+  display: flex;
+  width: 1fr;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+footer .bloques .bloqueTres .info {
+  text-align: center;
+}
+footer .bloques .bloqueTres .derRes {
+  text-align: center;
+}
+
+.divQuienesSomos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "carrusel comentarios" "quienesSomosDesc animacion";
+}
+
+@media (max-width: 750px) {
+  .divQuienesSomos {
+    display: grid;
+    grid-template-areas: "carrusel " "comentarios" "quienesSomosDesc" " animacion";
+  }
+}
+.contTarjet {
+  height: 300px;
+  width: 355px;
+  display: flex;
+  border: 1px solid grey;
+  margin: 10px;
+  cursor: default;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease;
+}
+.contTarjet .datosTarj {
+  width: 130px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: blanchedalmond;
+  border-left: 1px solid grey;
+}
+.contTarjet .datosTarj .tit {
+  width: 100% px;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contTarjet .datosTarj .precio {
+  width: 100% px;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contTarjet .datosTarj .descrip {
+  width: 100% px;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+.contTarjet .datosTarj .talle {
+  width: 100% px;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contTarjet .datosTarj .talle h7 {
+  margin-left: 3px;
+}
+.contTarjet .datosTarj .talle button {
+  margin-right: 3px;
+  border: 1px solid gray;
+  height: 25px;
+}
+.contTarjet .datosTarj .colores {
+  border-top: 1px solid gray;
+  width: 100% px;
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contTarjet .datosTarj .comp {
+  width: 100% px;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid;
+}
+.contTarjet .datosTarj .comp .comp button {
+  border-radius: 9px;
+  background-color: #eeeef3;
+  height: 30px;
+  width: 90px;
+  border-color: black;
+  color: black;
+  cursor: default;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease;
+}
+
+.contTarjet:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.comp button:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+  background-color: black;
+  color: white;
+}
+
+.mainHome {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.mainHome .divMainHome {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.tarjeta1 {
+  width: 350px;
+  height: 450px;
+  background-image: url(../img/imagenesHome/imagen1-min.jpg);
+  background-size: cover;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  transition: all ease-in-out 300ms;
+  margin: 20px;
+}
+
+.tarjeta1:hover {
+  box-shadow: 5px 5px 10px;
+}
+
+.tarjeta2 {
+  width: 350px;
+  height: 450px;
+  background-image: url(../img/imagenesHome/imagen2-min.jpg);
+  background-size: cover;
+  display: flex;
+  border: 1px gray solid;
+  margin: 20px;
+  transition: all ease-in-out 300ms;
+}
+
+.tarjeta2:hover {
+  box-shadow: 5px 5px 10px;
+}
+
+.tarjeta2 ul {
+  display: flex;
+  align-items: center;
+}
+.tarjeta2 ul li {
+  display: flex;
+  flex-direction: column;
+}
+.tarjeta2 ul li .a1 {
+  margin-top: 10px;
+  width: 150px;
+  height: 40px;
+  background-color: black;
+  border-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  color: aliceblue;
+  text-decoration: none;
+}
+.tarjeta2 ul li .a2 {
+  margin-top: 10px;
+  width: 150px;
+  height: 40px;
+  background-color: black;
+  border-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  color: aliceblue;
+  text-decoration: none;
+}
+.tarjeta2 ul li .a3 {
+  margin-top: 10px;
+  width: 150px;
+  height: 40px;
+  background-color: black;
+  border-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  color: aliceblue;
+  text-decoration: none;
+}
+.tarjeta2 ul li .a4 {
+  margin-top: 10px;
+  width: 150px;
+  height: 40px;
+  background-color: black;
+  border-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  color: aliceblue;
+  text-decoration: none;
+}
+.tarjeta2 ul li .a5 {
+  margin-top: 10px;
+  width: 150px;
+  height: 40px;
+  background-color: black;
+  border-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  color: aliceblue;
+  text-decoration: none;
+}
+.tarjeta2 ul li .a6 {
+  margin-top: 10px;
+  width: 150px;
+  height: 40px;
+  background-color: black;
+  border-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  color: aliceblue;
+  text-decoration: none;
+}
+.tarjeta2 ul li .a7 {
+  margin-top: 10px;
+  width: 150px;
+  height: 40px;
+  background-color: black;
+  border-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  color: aliceblue;
+  text-decoration: none;
+}
+.tarjeta2 ul li .a8 {
+  margin-top: 10px;
+  width: 150px;
+  height: 40px;
+  background-color: black;
+  border-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.a1:hover {
+  font-size: 23px;
+  color: aliceblue;
+}
+
+.a2:hover {
+  font-size: 23px;
+  color: aliceblue;
+}
+
+.a3:hover {
+  font-size: 23px;
+  color: aliceblue;
+}
+
+.a4:hover {
+  font-size: 23px;
+  color: aliceblue;
+}
+
+.a5:hover {
+  font-size: 23px;
+  color: aliceblue;
+}
+
+.a6:hover {
+  font-size: 23px;
+  color: aliceblue;
+}
+
+.a7:hover {
+  font-size: 23px;
+  color: aliceblue;
+}
+
+.a8:hover {
+  font-size: 23px;
+  color: aliceblue;
+}
+
+.tarjeta3 a {
+  text-decoration: none;
+}
+
+.tarjeta3 {
+  width: 350px;
+  height: 450px;
+  background-image: url(../img/imagenesHome/imagen3-min.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid grey;
+  transition: all ease-in-out 300ms;
+  margin: 20px;
+}
+
+.tarjeta3:hover {
+  box-shadow: 5px 5px 10px;
+}
+
+.mainProductos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.mainProductos .divProductos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.contTarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.titulos {
+  display: flex;
+  justify-content: center;
+}
+
+.titulos1 {
+  color: aliceblue;
+  background-color: black;
+  width: 100%;
+}
+
+.tablaMedidas {
+  display: flex;
+  justify-content: center;
+}
+
+.tablaMedidas img {
+  width: 360px;
+}
+
+.qstit {
+  width: 100%;
+  height: 50px;
+  padding: 30px;
+}
+
+.quienesSomos {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.quienesSomos .quienesSomosDesc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 355px;
+  background-color: antiquewhite;
+  margin: 5px;
+  border: 1px solid grey;
+  flex-direction: column;
+  grid-area: quienesSomosDesc;
+}
+.quienesSomos .quienesSomosDesc h2 {
+  text-decoration: underline;
+}
+.quienesSomos .comentarios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+  height: 400px;
+  width: 355px;
+  margin: 5px;
+  border: 1px solid grey;
+  grid-area: comentarios;
+}
+.quienesSomos .comentarios h2 {
+  text-decoration: underline;
+}
+.quienesSomos .carrusel {
+  height: 400px;
+  width: 355px;
+  margin: 5px;
+  border: 1px solid grey;
+  grid-area: carrusel;
+}
+.quienesSomos .animacion {
+  height: 400px;
+  width: 355px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: animacion;
+  border: 1px solid grey;
+}
+.quienesSomos .animacion img {
+  width: 300px;
+  position: absolute;
+  animation-name: rotacion;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+@keyframes rotacion {
+  from {
+    transform: rotatez(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+.slide img {
+  width: 355px;
+  height: 400px;
+}
+
+.mainHotsale {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.mainHotsale .divHotsale {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes {
+  display: flex;
+}
+
+.logo img {
+  width: 32px;
+  margin: 10px;
+}
+
+.redes img {
+  width: 32px;
+  margin: 10px;
+}
+
+.mainContactanos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.divContactanos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  width: 1000vh;
+}
+
+main form {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  width: 100%;
+}
+main form fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 50px;
+  width: 100%;
+}
+main form fieldset label {
+  padding: 10px;
+}
+main form fieldset legend {
+  font-family: "Dancing Script", cursive;
+  font-family: "Satisfy", cursive;
+  font-size: 30px;
+  text-align: center;
+}
+main form fieldset .formularios {
+  flex-direction: column;
+  display: flex;
+}
+main form fieldset .iframeMapa {
+  width: 300px;
+  margin: 20px;
+}
+
+h6 {
+  color: aliceblue;
+}
+
+h1 {
+  font-family: "Caveat", cursive;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Caveat", cursive;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Caveat", cursive;
+  text-align: center;
+  color: black;
+}
+
+p {
+  color: black;
+}
